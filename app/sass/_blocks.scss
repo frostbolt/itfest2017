@@ -1,5 +1,5 @@
 
-body > div{
+body > div {
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 }
@@ -9,8 +9,9 @@ body > div{
 }
 
 .main-content {
+	min-height: 100vh;
 	overflow-x: hidden;
-	>section {
+	>section, article {
 		max-width: 1000px;
 		// margin: 0 auto;
 		padding: 40px;
