@@ -58,7 +58,10 @@
 
 /* Extra Small Devices, Phones */
 @media (max-width : 645px){
-	.main-content > section {
+	ul {
+		padding: 5px;
+	}
+	.main-content > section, .main-content > article {
 		padding: 40px 20px;
 	}
 	.annotation {
