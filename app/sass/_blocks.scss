@@ -364,3 +364,106 @@ body > div {
 		background-position: 50%;
 	}
 }
+
+.teams, .mm-projects, .shorttrack {
+	list-style: none;
+	padding: 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+
+	grid-gap: 15px;
+	grid-wrap: wrap;
+	font-size: 14px;
+	li {
+		text-align: center;
+		padding: 10px;
+		background-color: #eee;
+		&:nth-child(2n) {
+			background-color: #e5e5e5;
+		}
+		span {
+			display: block;
+			position: relative;
+			padding: 14px 0 5px;
+			text-align: left;
+			&:before {
+				top: 0;
+				position: absolute;
+				font-size: 12px;
+				color: #999;
+			}
+		}
+		.number {
+			display: inline-block;
+			padding: 0px 20px 5px;
+			&:before {
+				left: 0;
+				top: 2px;
+				content: "№:";
+			}
+		}
+		.from:before {
+			content: "Город, учебное заведение:";
+		}
+		.coach:before {
+			content: "Тренер:";
+		}
+		.captain:before {
+			content: "Капитан:";
+		}
+		.competitor:before {
+			content: "Участник:";
+		}
+		.competitor1:before {
+			content: "Участник 1:";
+		}
+		.competitor2:before {
+			content: "Участник 2:";
+		}
+		.competitor3:before {
+			content: "Участник 3:";
+		}
+		.nomination:before {
+			content: "Номинация:";
+		}
+		.mentor:before {
+			content: "Руководитель:";
+		}
+		.author1:before {
+			content: "Автор 1:";
+		}
+		.author2:before {
+			content: "Автор 2:";
+		}
+		.author3:before {
+			content: "Автор 3:";
+		}
+		.grade:before {
+			content: "Год обучения:";
+		}
+		.group:before {
+			content: "Группа:";
+		}
+		.shorttrack-caption:before {
+			content: "Мастер класс:";
+		}
+		.status {
+			font-weight: 800;
+			padding: 0px 40px;
+			&.green {
+				color: #006400;
+			}
+			&.yellow {
+				color: #DAA520;
+			}
+			&:before {
+				left: 0;
+				top: 2px;
+				content: "Статус:";
+			}
+		}
+		.caption:before {
+			content: "Назавние работы:";
+		}
+	}
+}
