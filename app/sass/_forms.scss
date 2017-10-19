@@ -1,0 +1,41 @@
+form {
+	position: relative;
+	background-color: #eee;
+	padding: 20px;
+	label,div {
+		font-size: 16px;
+		display: block;
+		padding: 5px 0;
+		color: #555;
+		max-width: 600px;
+		margin: 0 auto;
+		&:last-child {
+			text-align: center;
+		}
+	}
+	input, select {
+		margin: 2px 0 4px;
+		padding: 5px 4px;
+		display: block;
+		font-size: 16px;
+		width: 100%;
+	}
+	h1 {
+		text-align: center;
+		font-size: 32px;
+	}
+	input[type="submit"] {
+		cursor: pointer;
+		display: inline-block;
+		margin: 20px 0; 
+		width: initial;
+		padding: 10px 15px;
+		border: 4px solid $dark-rgba-faded;
+		background-color: transparent;
+		&:hover {
+			color: white;
+			background-color: $dark;
+			border-color: $dark;
+		}
+	}
+}
