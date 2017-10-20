@@ -2,7 +2,8 @@ form {
 	position: relative;
 	background-color: #eee;
 	padding: 20px;
-	label,div {
+	margin: 20px 0;
+	label, div, p {
 		font-size: 16px;
 		display: block;
 		padding: 5px 0;
@@ -12,6 +13,10 @@ form {
 		&:last-child {
 			text-align: center;
 		}
+	}
+	p {
+		font-weight: 800;
+		font-size: 18px;
 	}
 	input, select {
 		margin: 2px 0 4px;
